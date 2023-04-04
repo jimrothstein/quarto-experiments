@@ -11,6 +11,9 @@ website:
       - about.qmd
       - href: 030_quarto_katex_html_references.qmd
         text: katex
+      - href: 001_tech_reading.qmd
+        text: tech_reading
+        
 
 format:
   html:
