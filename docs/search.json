@@ -1,0 +1,23 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "quarto-experiments",
+    "section": "",
+    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "030_quarto_katex_html_references.html",
+    "href": "030_quarto_katex_html_references.html",
+    "title": "030_quarto_katex_html_references.qmd",
+    "section": "",
+    "text": "(this is fenced)\n\n\n\n\n\n\nNote\n\n\n\nThis is a play file. Note that there are five types of callouts, including: note, warning, important, tip, and caution.\n\n\n\n\nKatex References (html)\n\nKatex\ndisplay link only as url: https://katex.org/docs/supported.html\nHTML with quarto (CSS, ) https://quarto.org/docs/output-formats/html-basics.html\nEquations, Tex macros https://quarto.org/docs/authoring/markdown-basics.html#equations\nhttps://quarto.org/docs/guide/\nhttps://quarto.org/docs/publishing/github-pages.html\n\n\n1 + 1\n\n[1] 2\n\n\nYou can add options to executable code like this\n\n\n[1] 4\n\n\n\n\n\nTest Latex\nThis is inline latex \\theta; using katex to render in html!"
+  }
+]

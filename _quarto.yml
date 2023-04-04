@@ -1,0 +1,22 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "quarto-experiments"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - about.qmd
+      - href: 030_quarto_katex_html_references.qmd
+        text: katex
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+
+
+
