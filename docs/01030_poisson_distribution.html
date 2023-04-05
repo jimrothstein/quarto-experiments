@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>quarto-experiments - 030_quarto_katex_html_references.qmd</title>
+<title>quarto-experiments – poisson_distribution</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -122,22 +122,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   }
 }</script>
 
-  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"></script>
-  <script>document.addEventListener("DOMContentLoaded", function () {
- var mathElements = document.getElementsByClassName("math");
- var macros = [];
- for (var i = 0; i < mathElements.length; i++) {
-  var texText = mathElements[i].firstChild;
-  if (mathElements[i].tagName == "SPAN") {
-   katex.render(texText.data, mathElements[i], {
-    displayMode: mathElements[i].classList.contains('display'),
-    throwOnError: false,
-    macros: macros,
-    fleqn: false
-   });
-}}});
-  </script>
-  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -167,7 +152,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
  <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./030_quarto_katex_html_references.html" aria-current="page">
+    <a class="nav-link" href="./030_quarto_katex_html_references.html">
  <span class="menu-text">katex</span></a>
   </li>  
   <li class="nav-item">
@@ -175,7 +160,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
  <span class="menu-text">tech_reading</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./01030_poisson_distribution.html">
+    <a class="nav-link active" href="./01030_poisson_distribution.html" aria-current="page">
  <span class="menu-text">01030_poisson_distribution.qmd</span></a>
   </li>  
 </ul>
@@ -193,32 +178,16 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#katex-references-html" id="toc-katex-references-html" class="nav-link active" data-scroll-target="#katex-references-html">Katex References (html)</a></li>
-  <li><a href="#test-latex" id="toc-test-latex" class="nav-link" data-scroll-target="#test-latex">Test Latex</a></li>
+  <li><a href="#poisson-distribution" id="toc-poisson-distribution" class="nav-link active" data-scroll-target="#poisson-distribution">Poisson Distribution</a></li>
+  <li><a href="#motivating-poisson" id="toc-motivating-poisson" class="nav-link" data-scroll-target="#motivating-poisson">Motivating Poisson:</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">030_quarto_katex_html_references.qmd</h1>
-</div>
 
 
-
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
-
-</header>
-
-<pre><code>(this is fenced)</code></pre>
 <div class="callout-note callout callout-style-default callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -229,37 +198,55 @@ Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>This is a <strong>play</strong> file. Note that there are five types of callouts, including: <code>note</code>, <code>warning</code>, <code>important</code>, <code>tip</code>, and <code>caution</code>.</p>
+<p>Note that there are five types of callouts, including: <code>note</code>, <code>warning</code>, <code>important</code>, <code>tip</code>, and <code>caution</code>.</p>
 </div>
 </div>
 <hr>
-<section id="katex-references-html" class="level3">
-<h3 class="anchored" data-anchor-id="katex-references-html">Katex References (html)</h3>
+<section id="poisson-distribution" class="level2">
+<h2 class="anchored" data-anchor-id="poisson-distribution">Poisson Distribution</h2>
 <ul>
-<li><a href="https://katex.org/docs/supported.html">Katex</a></li>
-<li>display link only as url: <a href="https://katex.org/docs/supported.html" class="uri">https://katex.org/docs/supported.html</a></li>
-<li>HTML with quarto (CSS, ) <a href="https://quarto.org/docs/output-formats/html-basics.html" class="uri">https://quarto.org/docs/output-formats/html-basics.html</a></li>
-<li>Equations, Tex macros <a href="https://quarto.org/docs/authoring/markdown-basics.html#equations" class="uri">https://quarto.org/docs/authoring/markdown-basics.html#equations</a></li>
-<li><a href="https://quarto.org/docs/guide/" class="uri">https://quarto.org/docs/guide/</a></li>
-<li><a href="https://quarto.org/docs/publishing/github-pages.html" class="uri">https://quarto.org/docs/publishing/github-pages.html</a></li>
+<li>SEE Taylor, binomial to Poisson</li>
+<li>BMLS</li>
+<li>PSU 414</li>
+<li>wikipedia</li>
+<li>http://www.econometricsbysimulation.com/search?q=poisson</li>
 </ul>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="sc">+</span> <span class="dv">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 2</code></pre>
-</div>
-</div>
-<p>You can add options to executable code like this</p>
-<div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 4</code></pre>
-</div>
-</div>
-<hr>
+<p>Let <span class="math inline">\(\chi\)</span> be rv, counting of events , 0, 1, 2 … per interval. <span class="math inline">\(\chi\)</span> might be</p>
+<ul>
+<li>counts per unit time, distance.</li>
+<li>typos per page.</li>
+<li>cars passing per unit time.</li>
+<li>ATM customers per hour.</li>
+</ul>
 </section>
-<section id="test-latex" class="level3">
-<h3 class="anchored" data-anchor-id="test-latex">Test Latex</h3>
-<p>This is inline latex <span class="math inline">\theta</span>; using katex to render in html!</p>
+<section id="motivating-poisson" class="level2">
+<h2 class="anchored" data-anchor-id="motivating-poisson">Motivating Poisson:</h2>
+<p>Suppose, on average, receive 9 letters in mail each day. And suppose can model post office as poisson. This addresses question: how many letters will I received today? Then expect sd to be sqrt(9) and so expect actual number of letters to vary between 3 and 12 (2 sd).</p>
+<span class="math display">\[\begin{align*}
+Pr(X = x) = {e^{-\lambda}\lambda^x}/{x!}
+\end{align*}\]</span>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>lambda <span class="ot">=</span> <span class="dv">9</span>    <span class="co"># rate of 1 per unit</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>x  <span class="ot">&lt;-</span> <span class="dv">0</span><span class="sc">:</span><span class="dv">20</span>    <span class="co"># how many counts?</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>z  <span class="ot">&lt;-</span> <span class="fu">dpois</span>(<span class="at">x =</span> x, <span class="at">lambda =</span> lambda)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>w  <span class="ot">&lt;-</span> <span class="fu">dpois</span>(<span class="at">x =</span> x, <span class="at">lambda =</span> <span class="dv">1</span>)</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(z, <span class="at">main =</span><span class="st">"Poisson Distribution: upto n=20 counts, compare lambda= c(1,9)"</span>,</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>     <span class="at">ylab =</span> <span class="st">"dpois"</span>,</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>     <span class="at">xlab =</span> <span class="st">"counts, 1:n"</span>,</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>     <span class="at">pch =</span> <span class="dv">19</span>,</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>     <span class="at">col =</span> <span class="st">"plum"</span> </span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="fu">points</span>(w, <span class="at">pch =</span> <span class="dv">20</span>, <span class="at">col=</span><span class="st">"red"</span>)   <span class="co"># colors()</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="01030_poisson_distribution_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid" width="672"></p>
+</div>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># plot(w, main ="Poisson Distribution: upto n=20 counts, lambda=1",</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="co">#      ylab = "dpois",</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="co">#      xlab = "counts, 1:n",</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co">#      pch = 19,</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="co">#      col = 3,</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="co">#      col.axis = "5"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 
 
 </section>

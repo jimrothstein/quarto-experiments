@@ -13,6 +13,8 @@ website:
         text: katex
       - href: 001_tech_reading.qmd
         text: tech_reading
+      - href: 01030_poisson_distribution.qmd
+        text: 01030_poisson_distribution.qmd
         
 
 format:
