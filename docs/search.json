@@ -47,12 +47,5 @@
     "title": "030_quarto_katex_html_references.qmd",
     "section": "",
     "text": "(this is fenced)\n\n\n\n\n\n\nNote\n\n\n\nThis is a play file. Note that there are five types of callouts, including: note, warning, important, tip, and caution.\n\n\n\n\nKatex References (html)\n\nKatex\ndisplay link only as url: https://katex.org/docs/supported.html\nHTML with quarto (CSS, ) https://quarto.org/docs/output-formats/html-basics.html\nEquations, Tex macros https://quarto.org/docs/authoring/markdown-basics.html#equations\nhttps://quarto.org/docs/guide/\nhttps://quarto.org/docs/publishing/github-pages.html\n\n\n1 + 1\n\n[1] 2\n\n\nYou can add options to executable code like this\n\n\n[1] 4\n\n\n\n\n\nTest Latex\nThis is inline latex \\theta; using katex to render in html!"
-  },
-  {
-    "objectID": "2023_04_07_Thomas_corrupt_letter.html",
-    "href": "2023_04_07_Thomas_corrupt_letter.html",
-    "title": "quarto-experiments",
-    "section": "",
-    "text": "Note\n\n\n\nDRAFT:\nAppreciate your feedback.\n\n\n10 April 2023\nHonorable Oregon Congressional Delegation\nSenator Ron Wyden\nSenator Jeff Merkley\nRepresentative Val Hoyle\n\n\nIs Sunshine the Best Disinfectant?\nOf all the events last week, a spiteful Tennessee Legislature and backward ruling of a backward Texas federal judge, illustrate how divorced our government is from the real, urgent issues we must confront in this country.\nHowever, a piercing third event, an illustration how the highest levels our government are entangled with private interests of the wealthy, demands a forceful response. A Supreme Court justice, who is unable or unwilling to comply with customs and laws of our nation or display some sense of ‘fair play’, is no longer fit to serve.\nI am well aware that positive change in our country requires American people demand it and fight for it.\nNonetheless, I urge you to take the lead in a forceful and permanent response: The corruption of our government by private interests must be reversed.\nYours truly,\nJim rothstein"
   }
 ]
