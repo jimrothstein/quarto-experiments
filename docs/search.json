@@ -39,7 +39,7 @@
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
+    "text": "About this site\nComing soon …\n\n\n\n\nflowchart LR\n  A[Hard edge] --&gt; B(Round edge)\n  B --&gt; C{Decision}\n  C --&gt; D[Result one]\n  C --&gt; E[Result two]\n\n\n\n\n\n\n\n\n\n\n\nNote\n\n\n\nExample of callout.\nnote, tip, warning, caution, and important.\n\n\n\nThis content can be styled with a border\n\n\n\nA 9px font."
   },
   {
     "objectID": "030_quarto_katex_html_references.html",
