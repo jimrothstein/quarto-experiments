@@ -16,6 +16,10 @@ website:
         text: tech_reading
       - href: 01030_poisson_distribution.qmd
         text: 01030_poisson_distribution.qmd
+      - href: not_zero.qmd
+        text: not zero
+      - href: 010_mtcars_basic.qmd
+        text: Where does mtcars live?
         
 
 format:
