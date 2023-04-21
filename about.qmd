@@ -1,5 +1,7 @@
 ---
 title: "About"
+editor_options: 
+  chunk_output_type: console
 ---
 
 About this site
@@ -20,7 +22,11 @@ Example of callout.
 :::
 
 
-
+```{mermaid }
+flowchart BT 
+    .globalenv --> env1 -->env2 --> ... 
+    
+```
 ::: {.border}
 This content can be styled with a border
 :::
@@ -31,3 +37,15 @@ A 9px font.
 :::
 
 
+```{mermaid}
+%% This is a comment.
+stateDiagram-v2
+    [*] --> Top
+    Top --> env2
+    env2 --> env1
+    env1 --> .globalenv
+    .globalenv --> [*]
+    
+   %% env1 --> env2
+    %%.globalenv --> env1
+```

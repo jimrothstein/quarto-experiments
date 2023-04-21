@@ -20,12 +20,14 @@ website:
         text: not zero
       - href: 010_mtcars_basic.qmd
         text: Where does mtcars live?
+      - href: 020_CSS_play.qmd
+        text: 020 CSS play
         
 
 format:
   html:
     theme: cosmo
-    css: styles.css
+    css: css_examples.css
     toc: true
 
 

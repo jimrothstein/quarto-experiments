@@ -2,7 +2,22 @@
 title: "quarto-experiments"
 editor_options: 
   chunk_output_type: console
+theme:
+  light: cosmo
+  dark: [cosmo, theme-dark.scss]
 ---
+
+  - test.scss
+ 
+  
+::: aside
+<center>This is a Quarto Presentation. To learn more, visit <https://quarto.org>.</center>
+
+<center><span style = 'font-size: 60%;'>*If you see mistakes or want to suggest changes, please create an [issue](https://github.com/UCSB-MEDS/customizing-quarto-websites/issues) on the source repository.*</span></center>
+:::
+
+<div class="body-text">this is body-text </div>
+<div class=".custom-title">thisis custom-title</div>
 
 This is a Quarto website.
 

@@ -103,6 +103,14 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link" href="./01030_poisson_distribution.html" rel="" target="">
  <span class="menu-text">01030_poisson_distribution.qmd</span></a>
   </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./not_zero.html" rel="" target="">
+ <span class="menu-text">not zero</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./010_mtcars_basic.html" rel="" target="">
+ <span class="menu-text">Where does mtcars live?</span></a>
+  </li>  
 </ul>
             <div class="quarto-navbar-tools ms-auto">
 </div>
@@ -167,12 +175,43 @@ Note
 <code>note</code>, <code>tip</code>, <code>warning</code>, <code>caution</code>, and <code>important</code>.</p>
 </div>
 </div>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<div>
+<pre class="mermaid mermaid-js">flowchart BT 
+    .globalenv --&gt; env1 --&gt;env2 --&gt; ... 
+    
+</pre>
+</div>
+</div>
+</div>
+</div>
 <div class="border">
 <p>This content can be styled with a border</p>
 </div>
 <div class="foo" style="color:forestgreen; font-size: 9px">
 <!-- `:::` begins a Div -->
 <p>A 9px font.</p>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<div>
+<pre class="mermaid mermaid-js">%% This is a comment.
+stateDiagram-v2
+    [*] --&gt; Top
+    Top --&gt; env2
+    env2 --&gt; env1
+    env1 --&gt; .globalenv
+    .globalenv --&gt; [*]
+    
+   %% env1 --&gt; env2
+    %%.globalenv --&gt; env1
+</pre>
+</div>
+</div>
+</div>
 </div>
 
 
