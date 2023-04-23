@@ -22,6 +22,8 @@ website:
         text: Where does mtcars live?
       - href: 020_CSS_play.qmd
         text: 020 CSS play
+      - href: 400_rlang_proposal.qmd
+        text: Rlang Guide?
         
 
 format:
