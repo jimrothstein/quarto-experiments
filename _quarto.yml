@@ -24,6 +24,8 @@ website:
         text: 020 CSS play
       - href: 400_rlang_proposal.qmd
         text: Rlang Guide?
+      - href: 010_mtcars_base_v2.qmd
+        text: soft link
         
 
 format:
