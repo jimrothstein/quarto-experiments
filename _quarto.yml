@@ -26,6 +26,8 @@ website:
         text: Rlang Guide?
       - href: 010_mtcars_base_v2.qmd
         text: soft link
+      - href: 310_R_notes.qmd
+        text: R_notes (DRAFT)
         
 
 format:
