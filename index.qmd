@@ -8,6 +8,7 @@ theme:
 ---
 
   - test.scss
+  - one change
  
   
 ::: aside

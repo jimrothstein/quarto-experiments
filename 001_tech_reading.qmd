@@ -6,6 +6,12 @@ pdf-engine: lualatex
 format:
   html:
     html-math-method: katex
+execute: 
+  error: true
+  cache: true
+  collapse: true
+---
+<!--
   pdf: 
     toc: false
     include-in-header: 
@@ -13,7 +19,7 @@ format:
         \usepackage[top=.5in, bottom=.5in, left=.7in, right=.5in]{geometry}
         \usepackage{amsmath,amssymb,amstext,amsfonts}
         \usepackage{lipsum}
----
+--
 \footnotesize
 
 ```

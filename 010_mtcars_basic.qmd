@@ -37,6 +37,9 @@ with(mtcars, hp)
 ```
 Of course, R's help also explains this but you must be comfortable with terms like `environment` , `expression` and `parent` and what `constructing an environment` with `data` means.
 ```{r}
+#| eval: false
+#| echo: true
+
 ?with
 ```
 
@@ -81,7 +84,6 @@ ls(parent.env(globalenv()))
 
 This will add mtcars into globalenv(), but not change search()
 ```{r}
-?data
 # This puts data in globalenv()
 data(mtcars)
 ls()
