@@ -26,6 +26,8 @@ website:
         text: Rlang Guide?
       - href: 310_R_notes.qmd
         text: R_notes (DRAFT)
+      - href: 410_bquote_example.qmd
+        text: bquote_examples
         
 
 format:
