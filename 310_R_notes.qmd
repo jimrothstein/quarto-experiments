@@ -20,7 +20,6 @@ execute:
   cache: true
   collapse: true
 css:  css_examples.css
-
 ---
 ::: {.callout-note}
 All R, math, statistics  notes here.
