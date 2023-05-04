@@ -30,11 +30,21 @@ website:
         text: bquote_examples
         
 
+
+##  project-wide
 format:
   html:
     theme: cosmo
-    css: css_examples.css
+    #css: css_examples.css
+    # css: styles.css
     toc: true
-
-
+knitr:
+  opts_chunk: 
+    collapse: true
+    comment: "..........>" 
+execute:
+  error: true
+  cache: true
+  output-dir: docs
+  standalone: true 
 
