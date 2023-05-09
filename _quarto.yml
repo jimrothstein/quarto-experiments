@@ -50,6 +50,6 @@ knitr:
 execute:
   error: true
   cache: true
-  standalone: t-rue 
+  standalone: true 
   output-dir: docs
 

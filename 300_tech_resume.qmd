@@ -4,7 +4,7 @@ format:
         toc: false 
         toc_depth: 2
         toc_float: true
-        embed-resources: true
+#        embed-resources: true
 #     pdf:   
 #         latex_engine: lualatex  
 #         toc: false
