@@ -34,9 +34,12 @@ website:
 ##  project-wide
 format:
   html:
-    theme: cosmo
+    theme: 
+    - cosmo
+    - custom.scss
+    #theme: solar
     #css: css_examples.css
-    # css: styles.css
+    #css: styles.css
     toc: true
 knitr:
   opts_chunk: 

@@ -1,0 +1,60 @@
+---
+format:   
+    html:
+        toc: false 
+        toc_depth: 2
+        toc_float: true
+        embed-resources: true
+#     pdf:   
+#         latex_engine: lualatex  
+#         toc: false
+#         toc_depth:  2   
+execute: 
+        error: true
+        collapse: true
+        output-dir: docs 
+---
+
+# jim Rothstein	
+## R Coder/Data Analysis
+
+> [jimrothstein@gmail.com](jimrothstein@gmail.com)  
+> (831) 824-4304
+>
+[Github: https://github.com/jimrothstein](Github:https://github.com/jimrothstein)
+
+------
+
+
+### Technical {#technical}
+
+1.	R, packages, httr2, tidyverse, data.table, etc
+1.  API	
+1.	Git/Github
+1.  Latex, knitr, pandoc, quarto
+1.	Rstudio/Neovim
+1.  Lua
+1.	Linux
+
+------
+
+### Experience {#experience}  
+
+
+Contribute R Github projects 
+
+[https://github.com/jimrothstein](https://github.com/jimrothstein)  
+[https://jimrothstein.github.io/](https://jimrothstein.github.io)
+
+Variety database, programming projects 
+
+------
+
+###	Education {#education}
+	BS MIT, physics
+
+### Footer {#footer}
+
+Jim Rothstein	 -- [jimrothstein@gmail.com](jimrothstein@gmail.com) -- (831) 824-4304
+
+------

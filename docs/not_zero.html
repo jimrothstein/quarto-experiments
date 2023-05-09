@@ -96,7 +96,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }</script>
 
 
-<link rel="stylesheet" href="css_examples.css">
 </head>
 
 <body class="nav-fixed">
@@ -210,31 +209,27 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 <p>I knew that <code>0</code> becomes FALSE, when logical is required.</p>
-<div class="cell">
+<div class="cell" data-hash="not_zero_cache/html/fig-airquality_d2c2947a0e2bb770955c15b0f578e0f8">
 <details>
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span>(<span class="dv">0</span>) <span class="fu">print</span>(<span class="st">"FALSE"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
 <p>And I knew that <code>1</code> becomes TRUE</p>
-<div class="cell">
+<div class="cell" data-hash="not_zero_cache/html/unnamed-chunk-2_8a4f90353bd582f0a1e9186e0a4d6764">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span>(<span class="dv">1</span>) <span class="fu">print</span>(<span class="st">"TRUE"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span>(<span class="dv">1</span>) <span class="fu">print</span>(<span class="st">"TRUE"</span>)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>..........<span class="sc">&gt;</span> [<span class="dv">1</span>] <span class="st">"TRUE"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] "TRUE"</code></pre>
-</div>
 </div>
 <p>But I did not know:</p>
-<div class="cell">
+<div class="cell" data-hash="not_zero_cache/html/unnamed-chunk-3_85baed0ac07269b438347836be530740">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span>(<span class="sc">!</span><span class="dv">0</span>) <span class="fu">print</span>(<span class="st">"TRUE"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span>(<span class="sc">!</span><span class="dv">0</span>) <span class="fu">print</span>(<span class="st">"TRUE"</span>)</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>..........<span class="sc">&gt;</span> [<span class="dv">1</span>] <span class="st">"TRUE"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] "TRUE"</code></pre>
-</div>
 </div>
 
 
