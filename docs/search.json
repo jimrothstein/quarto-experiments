@@ -168,6 +168,27 @@
     "text": "z= bquote(sin(1 + .(theta))) ## sin(1 + 0.7853…) typeof(z) ## “language” is.call(z) ## T eval(z) ## 0.977\n\n::: {.cell hash='410_bquote_example_cache/html/unnamed-chunk-6_bfc5dd3dd7e360f94032c16c06e1ea63'}\n\n```{.r .cell-code}\nx = 5 \nbquote(x == .(x))\n..........&gt; x == 5\nbquote(.(x))\n..........&gt; [1] 5\n\n## from ethz documentation, takes expr, returns lang ob\ndefault &lt;- 1\n(z = bquote( function(x, y = .(default)) x+y ))\n..........&gt; function(x, y = 1) x + y\n\ntypeof(z)\n..........&gt; [1] \"language\"\nis.call(z)  #T\n..........&gt; [1] TRUE\nis.expression(z) #F \n..........&gt; [1] FALSE\nis.symbol(z) #F\n..........&gt; [1] FALSE\na = 2\nplot(1:10, a*(1:10), main = bquote(a == .(a)))\n\n\n\n\n\n(angle  = 1:10)\n..........&gt;  [1]  1  2  3  4  5  6  7  8  9 10\n(variable = as.name(\"angle\"))             ## variable is now a symbol\n..........&gt; angle\n\nis.character(variable)  # FALSE\n..........&gt; [1] FALSE\n\nis.name(variable)   # TRUE\n..........&gt; [1] TRUE\nis.symbol(variable) # TRUE\n..........&gt; [1] TRUE\ntypeof(variable)    # TRUE\n..........&gt; [1] \"symbol\"\n\n##\nexpr = quote(x+y)\nis.expression(expr) # FALSE\n..........&gt; [1] FALSE\nis.call(expr)      # TRUE\n..........&gt; [1] TRUE\nstr(expr)\n..........&gt;  language x + y\n\n#-----------------------------\n##  quasiquotation:  insert .... into an expr template; return expression\npdf()\n\n\nplot(x = 1:10, y=91:100)\n\nbquote(x= .(variable))\n..........&gt; Error in bquote(x = .(variable)): unused argument (x = .(variable))\nbquote(\n  plot(x = .(variable), \n       y = sin(.(variable)))\n  )\n..........&gt; plot(x = angle, y = sin(angle))\n\ndev.off()\n..........&gt; png \n..........&gt;   2\n:::\n\n## A variable to pass in\ncor &lt;- -.321\ncor2 &lt;- '-.321'\n\npar(mfrow = c(1, 2))\nplot(1:10, 1:10, main = bquote(\"Hello\" ~ r[xy] == .(cor) ~ \"and\" ~ B^2))\nplot(1:10, 1:10, main = bquote(\"Hello\" ~ r[xy] == .(cor2) ~ \"and\" ~ B^2))\n\n\n\n\n\nbquote(\"Hello\")\n..........&gt; [1] \"Hello\"\nbquote(\"Hello\" ~ 3)\n..........&gt; \"Hello\" ~ 3\nbquote(\"Hello\" ~ r[xy])\n..........&gt; \"Hello\" ~ r[xy]\nx = 2\nbquote(\"hello\" ~ .(x))\n..........&gt; \"hello\" ~ 2\nbquote(\"x\" ~ .(x))\n..........&gt; \"x\" ~ 2\nbquote(\"The answer \"  ~.(x))\n..........&gt; \"The answer \" ~ 2\nbquote(x == .(x))\n..........&gt; x == 2\nif (F) bquote(x = .(x))\n\n# want 1 + 2\ny = 1\nx=2\nbquote( function(x, y = .(y)) x+y )\n..........&gt; function(x, y = 1) x + y\neval(bquote( function(x, y = .(y)) x+y ))\n..........&gt; function(x, y = .(y)) x+y\neval(eval(bquote( function(x, y = .(y)) x+y )))\n..........&gt; function(x, y = .(y)) x+y"
   },
   {
+    "objectID": "130_poisson_distribution.html",
+    "href": "130_poisson_distribution.html",
+    "title": "quarto-experiments",
+    "section": "",
+    "text": "Note\n\n\n\nNote that there are five types of callouts, including: note, warning, important, tip, and caution."
+  },
+  {
+    "objectID": "130_poisson_distribution.html#poisson-distribution",
+    "href": "130_poisson_distribution.html#poisson-distribution",
+    "title": "quarto-experiments",
+    "section": "Poisson Distribution",
+    "text": "Poisson Distribution\n\nSEE Taylor, binomial to Poisson\nBMLS\nPSU 414\nwikipedia\nhttp://www.econometricsbysimulation.com/search?q=poisson\n\nLet \\(\\chi\\) be rv, counting of events , 0, 1, 2 … per interval. \\(\\chi\\) might be\n\ncounts per unit time, distance.\ntypos per page.\ncars passing per unit time.\nATM customers per hour."
+  },
+  {
+    "objectID": "130_poisson_distribution.html#motivating-poisson",
+    "href": "130_poisson_distribution.html#motivating-poisson",
+    "title": "quarto-experiments",
+    "section": "Motivating Poisson:",
+    "text": "Motivating Poisson:\nSuppose, on average, receive 9 letters in mail each day. And suppose can model post office as poisson. This addresses question: how many letters will I received today? Then expect sd to be sqrt(9) and so expect actual number of letters to vary between 3 and 12 (2 sd).\n\\[\\begin{align*}\nPr(X = x) = {e^{-\\lambda}\\lambda^x}/{x!}\n\\end{align*}\\]\n\nlambda = 9    # rate of 1 per unit\nx  &lt;- 0:20    # how many counts?\nz  &lt;- dpois(x = x, lambda = lambda)\nw  &lt;- dpois(x = x, lambda = 1)\nplot(z, main =\"Poisson Distribution: upto n=20 counts, compare lambda= c(1,9)\",\n     ylab = \"dpois\",\n     xlab = \"counts, 1:n\",\n     pch = 19,\n     col = \"plum\" \n)\npoints(w, pch = 20, col=\"red\")   # colors()\n\n\n\n\n# plot(w, main =\"Poisson Distribution: upto n=20 counts, lambda=1\",\n#      ylab = \"dpois\",\n#      xlab = \"counts, 1:n\",\n#      pch = 19,\n#      col = 3,\n#      col.axis = \"5\""
+  },
+  {
     "objectID": "020_CSS_play.html",
     "href": "020_CSS_play.html",
     "title": "Untitled",

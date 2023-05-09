@@ -14,8 +14,8 @@ website:
         text: katex
       - href: 001_tech_reading.qmd
         text: tech_reading
-      - href: 01030_poisson_distribution.qmd
-        text: 01030_poisson_distribution.qmd
+      - href: 130_poisson_distribution.qmd
+        text: 130_poisson_distribution.qmd
       - href: not_zero.qmd
         text: not zero
       - href: 010_mtcars_basic.qmd
@@ -28,6 +28,8 @@ website:
         text: R_notes (DRAFT)
       - href: 410_bquote_example.qmd
         text: bquote_examples
+      - href: 300_tech_resume.qmd
+        text: tech resume
         
 
 
@@ -48,6 +50,6 @@ knitr:
 execute:
   error: true
   cache: true
+  standalone: t-rue 
   output-dir: docs
-  standalone: true 
 
