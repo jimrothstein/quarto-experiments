@@ -49,7 +49,9 @@ knitr:
     comment: "..........>" 
 execute:
   error: true
-  cache: true
+  cache: false
+  collapse: true
+  embed-resources: true
   standalone: true 
   output-dir: docs
 
