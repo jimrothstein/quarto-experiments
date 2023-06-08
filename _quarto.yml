@@ -11,7 +11,7 @@ website:
       - href: about.qmd
         text: about
       - href: 030_quarto_katex_html_references.qmd
-        text: katex
+        text: katex practice
       - href: 001_tech_reading.qmd
         text: tech_reading
       - href: 130_poisson_distribution.qmd

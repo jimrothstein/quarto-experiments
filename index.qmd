@@ -22,7 +22,7 @@ about:
 ---
   
 ###   Top of Page
-  
+-   First attempt at collection of R notes (for myself)  
 
 ###   R code
 ```{r}

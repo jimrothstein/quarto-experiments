@@ -13,11 +13,6 @@ editor_options:
 (this is fenced)
 ```
 
-
-
-
-
-
 ::: callout-note
 This is a **play** file.
 Note that there are five types of callouts, including: `note`,

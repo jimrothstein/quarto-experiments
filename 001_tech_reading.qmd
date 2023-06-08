@@ -8,7 +8,6 @@ format:
     html-math-method: katex
 execute: 
   error: true
-  cache: true
   collapse: true
 ---
 <!--

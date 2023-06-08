@@ -123,7 +123,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./030_quarto_katex_html_references.html" rel="" target="">
- <span class="menu-text">katex</span></a>
+ <span class="menu-text">katex practice</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./001_tech_reading.html" rel="" target="">
@@ -197,7 +197,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <!-- #| error:   true means display error, but DO NOT halt -->
 <p>A frequent problem occurs when trying to access columns inside a data.frame.</p>
-<div class="cell" data-errors="true" data-hash="010_mtcars_basic_cache/html/unnamed-chunk-1_8dd9c52ad5f949cfd2b0d7a072985a52">
+<div class="cell" data-errors="true">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(mtcars)</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>..........<span class="sc">&gt;</span>                    mpg cyl disp  hp drat    wt  qsec vs am gear carb</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>..........<span class="sc">&gt;</span> Mazda RX4         <span class="fl">21.0</span>   <span class="dv">6</span>  <span class="dv">160</span> <span class="dv">110</span> <span class="fl">3.90</span> <span class="fl">2.620</span> <span class="fl">16.46</span>  <span class="dv">0</span>  <span class="dv">1</span>    <span class="dv">4</span>    <span class="dv">4</span></span>
@@ -211,28 +211,28 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>..........<span class="sc">&gt;</span> [<span class="dv">1</span>] <span class="dv">110</span> <span class="dv">110</span>  <span class="dv">93</span> <span class="dv">110</span> <span class="dv">175</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>But using just col name fails.</p>
-<div class="cell" data-hash="010_mtcars_basic_cache/html/unnamed-chunk-2_e51687a26a5cc6c1c497992eb0760332">
+<div class="cell">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>mtcars[<span class="dv">1</span><span class="sc">:</span><span class="dv">5</span>, hp]</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>..........<span class="sc">&gt;</span> Error <span class="cf">in</span> <span class="fu">eval</span>(expr, envir, enclos)<span class="sc">:</span> object <span class="st">'hp'</span> not found</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>The reason as explained in many places, such as <a href="https://dplyr.tidyverse.org/articles/programming.html">dplyr</a> ….., is mtcars exisits in the environment, but not hp.</p>
-<div class="cell" data-hash="010_mtcars_basic_cache/html/unnamed-chunk-3_cc82c22c3251ce778c4d1501400df154">
+<div class="cell">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>hp</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>..........<span class="sc">&gt;</span> Error <span class="cf">in</span> <span class="fu">eval</span>(expr, envir, enclos)<span class="sc">:</span> object <span class="st">'hp'</span> not found</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Again this is explained in many places, along with several ways to <code>fix</code>, for example.</p>
-<div class="cell" data-hash="010_mtcars_basic_cache/html/unnamed-chunk-4_b0665b4c265365707a25f968535067a5">
+<div class="cell">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">with</span>(mtcars, hp)</span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>..........<span class="sc">&gt;</span>  [<span class="dv">1</span>] <span class="dv">110</span> <span class="dv">110</span>  <span class="dv">93</span> <span class="dv">110</span> <span class="dv">175</span> <span class="dv">105</span> <span class="dv">245</span>  <span class="dv">62</span>  <span class="dv">95</span> <span class="dv">123</span> <span class="dv">123</span> <span class="dv">180</span> <span class="dv">180</span> <span class="dv">180</span> <span class="dv">205</span> <span class="dv">215</span> <span class="dv">230</span>  <span class="dv">66</span>  <span class="dv">52</span></span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>..........<span class="sc">&gt;</span> [<span class="dv">20</span>]  <span class="dv">65</span>  <span class="dv">97</span> <span class="dv">150</span> <span class="dv">150</span> <span class="dv">245</span> <span class="dv">175</span>  <span class="dv">66</span>  <span class="dv">91</span> <span class="dv">113</span> <span class="dv">264</span> <span class="dv">175</span> <span class="dv">335</span> <span class="dv">109</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Of course, R’s help also explains this but you must be comfortable with terms like <code>environment</code> , <code>expression</code> and <code>parent</code> and what <code>constructing an environment</code> with <code>data</code> means.</p>
-<div class="cell" data-hash="010_mtcars_basic_cache/html/unnamed-chunk-5_5c1795b8efb12d010b5e2ba7a2aff5bf">
+<div class="cell">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>?with</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Here is my own take. It is same as above, but I find this way clearer.</p>
 <p>Let’s check what is current globalenv() the the environment. Then packages attached to search path.</p>
-<div class="cell" data-hash="010_mtcars_basic_cache/html/unnamed-chunk-6_2ffc48ade9afd11ba5609dc333b9fec5">
+<div class="cell">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ls</span>()</span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>..........<span class="sc">&gt;</span> [<span class="dv">1</span>] <span class="st">"has_annotations"</span></span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="fu">search</span>()</span>
@@ -241,7 +241,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>..........<span class="sc">&gt;</span> [<span class="dv">7</span>] <span class="st">"package:methods"</span>   <span class="st">"Autoloads"</span>         <span class="st">"package:base"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>For our purposes, note there is no <code>hp</code></p>
-<div class="cell" data-hash="010_mtcars_basic_cache/html/unnamed-chunk-7_e2a1f129d868f649100c9a70271dd1df">
+<div class="cell">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ls</span>(base)</span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>..........<span class="sc">&gt;</span> Warning <span class="cf">in</span> <span class="fu">ls</span>(base)<span class="sc">:</span> <span class="st">'base'</span> converted to character string</span>
 <span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>..........<span class="sc">&gt;</span> Error <span class="cf">in</span> <span class="fu">as.environment</span>(pos)<span class="sc">:</span> no item called <span class="st">"base"</span> on the search list</span>
@@ -249,7 +249,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>..........<span class="sc">&gt;</span> <span class="fu">integer</span>(<span class="dv">0</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Attach <code>mtcars</code> to search path</p>
-<div class="cell" data-hash="010_mtcars_basic_cache/html/unnamed-chunk-8_471fd4ca294a74dcfae4a3fcadd16547">
+<div class="cell">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">attach</span>(mtcars)</span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="fu">search</span>()</span>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>..........<span class="sc">&gt;</span>  [<span class="dv">1</span>] <span class="st">".GlobalEnv"</span>        <span class="st">"mtcars"</span>            <span class="st">"package:stats"</span>    </span>
@@ -258,19 +258,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>..........<span class="sc">&gt;</span> [<span class="dv">10</span>] <span class="st">"package:base"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Now, can find <code>hp</code></p>
-<div class="cell" data-hash="010_mtcars_basic_cache/html/unnamed-chunk-9_7201911f166abd5edf40545626ca58a6">
+<div class="cell">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>hp</span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>..........<span class="sc">&gt;</span>  [<span class="dv">1</span>] <span class="dv">110</span> <span class="dv">110</span>  <span class="dv">93</span> <span class="dv">110</span> <span class="dv">175</span> <span class="dv">105</span> <span class="dv">245</span>  <span class="dv">62</span>  <span class="dv">95</span> <span class="dv">123</span> <span class="dv">123</span> <span class="dv">180</span> <span class="dv">180</span> <span class="dv">180</span> <span class="dv">205</span> <span class="dv">215</span> <span class="dv">230</span>  <span class="dv">66</span>  <span class="dv">52</span></span>
 <span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>..........<span class="sc">&gt;</span> [<span class="dv">20</span>]  <span class="dv">65</span>  <span class="dv">97</span> <span class="dv">150</span> <span class="dv">150</span> <span class="dv">245</span> <span class="dv">175</span>  <span class="dv">66</span>  <span class="dv">91</span> <span class="dv">113</span> <span class="dv">264</span> <span class="dv">175</span> <span class="dv">335</span> <span class="dv">109</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Why? col names are in environment one level up from globalenv()</p>
-<div class="cell" data-hash="010_mtcars_basic_cache/html/unnamed-chunk-10_e273a89f334bd61a2eb3d93713678023">
+<div class="cell">
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ls</span>(<span class="fu">parent.env</span>(<span class="fu">globalenv</span>()))</span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>..........<span class="sc">&gt;</span>  [<span class="dv">1</span>] <span class="st">"am"</span>   <span class="st">"carb"</span> <span class="st">"cyl"</span>  <span class="st">"disp"</span> <span class="st">"drat"</span> <span class="st">"gear"</span> <span class="st">"hp"</span>   <span class="st">"mpg"</span>  <span class="st">"qsec"</span> <span class="st">"vs"</span>  </span>
 <span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>..........<span class="sc">&gt;</span> [<span class="dv">11</span>] <span class="st">"wt"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>This will add mtcars into globalenv(), but not change search()</p>
-<div class="cell" data-hash="010_mtcars_basic_cache/html/unnamed-chunk-11_6443c08550d56b9d0b91534e0e90e088">
+<div class="cell">
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># This puts data in globalenv()</span></span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(mtcars)</span>
 <span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="fu">ls</span>()</span>
@@ -282,7 +282,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a>..........<span class="sc">&gt;</span> [<span class="dv">10</span>] <span class="st">"package:base"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Remove mtcars</p>
-<div class="cell" data-hash="010_mtcars_basic_cache/html/unnamed-chunk-12_599a88a56856f21c803059cdf34d09b2">
+<div class="cell">
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">rm</span>(mtcars)</span>
 <span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ls</span>()</span>
 <span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>..........<span class="sc">&gt;</span> [<span class="dv">1</span>] <span class="st">"has_annotations"</span></span>
