@@ -7,7 +7,7 @@ editor_options:
 About this site
 
 
-Coming soon ...
+Just a few things *Mermaid* can do
 ```{mermaid}
 flowchart LR
   A[Hard edge] --> B(Round edge)

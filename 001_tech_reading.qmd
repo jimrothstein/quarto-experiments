@@ -1,7 +1,7 @@
 ---
-title: "using .qmd "
-author: "Norah Jones"
-date: "5/22/2021"
+title: "Reading List"
+author: "jim rothstein"
+date: "22JUNE2023"
 pdf-engine: lualatex
 format:
   html:
@@ -30,7 +30,6 @@ template has \small font embedded
 
 <!--
 LINK:  [TEXT portion](URL portion)
-
 \url{nytimes.com}
 
 \href{url}{text}   url itself does NOT print
@@ -56,28 +55,37 @@ https://www.markdownguide.org/basic-syntax/
 
 vim: to format all urls for md
 s/https.*/[&]()/g
-
-
-
 -->
 
 As of \today
 
+***
 ```
-Use \href{url}{text}
+HTML:   2 ways to insert url
+
+
+-  HTML:  Use <https://quarto.org/docs/authoring/markdown-basics.html#links-image> 
+- [markdown-basics](https://quarto.org/docs/authoring/markdown-basics.html#links-image)
 ```
 
+Use <https://quarto.org/docs/authoring/markdown-basics.html#links-image> 
+
+OR  
+[markdown-basics](https://quarto.org/docs/authoring/markdown-basics.html#links-image)
+
+
+***
 ###	BookClub
 - Janssens, DS at Command Line: https://www.datascienceatthecommandline.com/2e/
-- Hadley, https://mastering-shiny.org/
+- Hadley, <https://mastering-shiny.org/>
 - R, javascript + shiny https://book.javascript-for-r.com/
 - HTTP Testing (book) https://books.ropensci.org/http-testing/  
 
 ### R - always learn something new:
   *  Burns, R Inferno (not intro book)
-  *  Peng, https://bookdown.org/rdpeng/rprogdatascience/
+  *  Peng, <https://bookdown.org/rdpeng/rprogdatascience/ >
 	*  Peng, https://bookdown.org/rdpeng/RProgDA/
-  *  Hadley, https://r4ds.had.co.nz/index.html
+  *  Hadley, <https://r4ds.had.co.nz/index.html>
   *	 [Jennybc (book)](https://stat545.com/index.html) [wtf](https://rstats.wtf/) [git](https://happygitwithr.com/)
   *  Gillespie, Lovelace (2016) https://bookdown.org/csgillespie/efficientR/
   *  Matloff:  Art of R Programming (2011)

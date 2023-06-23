@@ -5,6 +5,7 @@ image: flower.png
 #  light: cosmo
 #  dark: [cosmo, theme-dark.scss]
 # css: styles.css
+#    css: css_examples.css
 editor_options: 
   chunk_output_type: console
 about:
@@ -12,17 +13,18 @@ about:
   image-shape: round
   image-width: 5 em
   links:
-    - icon: twitter
-      text: twitter
-      href: https://twitter.com
+#    - icon: twitter
+#      text: twitter
+#      href: https://twitter.com
     - icon: github
       text: Github
       href: https://github.com/jimrothstein
   id: ppc
 ---
   
-###   Top of Page
--   First attempt at collection of R notes (for myself)  
+###   Web Page for Jim Rothstein
+-   First attempt at collection of misc R notes 
+-   Also w-i-p, as I learn SCSS.
 
 ###   R code
 ```{r}
